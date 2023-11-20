@@ -1,0 +1,42 @@
+{
+  "name": "commithelper",
+  "displayName": "CommitHelper",
+  "description": "Facilite seu fluxo de trabalho no Git com o CommitHelper, uma extensão intuitiva do VSCode projetada para aprimorar a maneira como você lida com commits. Esta extensão elegante e eficiente lê seus arquivos não comitados, preparando um rascunho de commit personalizado e detalhado para você. Com o CommitHelper, cada alteração que você faz é acompanhada de perto. A extensão gera automaticamente um texto descritivo sobre as modificações em cada arquivo, economizando seu tempo e garantindo que nenhum detalhe importante seja esquecido. Após a geração do rascunho do commit, um editor intuitivo é aberto, permitindo-lhe ajustar e personalizar a mensagem de commit a seu gosto. Seja para adicionar detalhes adicionais, ajustar a formatação ou refinar a linguagem, o CommitHelper coloca você no controle total. Finalmente, com um simples clique no botão de commit integrado, suas mudanças são comitadas com uma mensagem clara e informativa. Ideal para desenvolvedores que valorizam commits precisos e bem documentados, o CommitHelper transforma a tarefa rotineira de comitar em uma experiência mais organizada, eficiente e agradável.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commithelper.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.6"
+  }
+}
